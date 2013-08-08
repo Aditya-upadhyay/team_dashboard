@@ -8,7 +8,9 @@ gem "less-rails-bootstrap", "~> 2.3.0"
 
 gem 'angular-rails'
 
-gem "mysql2", "~> 0.3.11"
+gem 'sqlite3'
+# bundle --without mysql if using sqlite
+gem 'mysql2', "~> 0.3.11", :group => :mysql
 
 gem "unicorn"
 gem "foreman"
